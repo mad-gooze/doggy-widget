@@ -1,1 +1,1 @@
-# puppy-widget
+# doggy-widget
