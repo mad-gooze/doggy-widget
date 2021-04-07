@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>doggy widget via script</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #widget-1 {
+            width: 640px;
+            height: 480px;
+        }
+
+        #widget-2 {
+            width: 500px;
+            height: 200px;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif !important;
+            font-size: 10px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center">
+        <div id="widget-1"></div>
+        <br>
+        <div id="widget-2"></div>
+    </div>
+
+    <script src="doggy-widget.js"></script>
+    <link rel="stylesheet" href="doggy-widget.css">
+
+
+    <script>
+        const widget1 = DoggyWidget.init({
+            container: document.getElementById('widget-1'),
+        });
+        const widget2 = DoggyWidget.init({
+            container: document.getElementById('widget-2'),
+        });
+    </script>
+</body>
+
+</html>
